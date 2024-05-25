@@ -3,15 +3,3 @@ admin_toolbar.settings:
   description: 'Configure the Admin Toolbar module.'
   route_name: admin_toolbar.settings
   parent: system.admin_config_ui
-
-entity.admin_toolbar_test_entity.settings:
-  title: 'Test Entity'
-  description: 'Configure a Test Entity entity type.'
-  route_name:  entity.admin_toolbar_test_entity.settings
-  parent: system.admin_structure
-
-entity.admin_toolbar_test_entity.collection:
-  title: 'Test Entities'
-  description: 'List of test entities.'
-  route_name: entity.admin_toolbar_test_entity.collection
-  parent: system.admin_content

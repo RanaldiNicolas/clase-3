@@ -1,5 +1,0 @@
-admin_toolbar_test_entity.add_form:
-  title: 'Add test entity'
-  route_name: entity.admin_toolbar_test_entity.add_form
-  appears_on:
-    - entity.admin_toolbar_test_entity.collection

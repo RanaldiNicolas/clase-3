@@ -5,11 +5,3 @@ admin_toolbar.settings:
     _title: 'Admin Toolbar settings'
   requirements:
     _permission: 'administer site configuration'
-
-entity.admin_toolbar_test_entity.settings:
-  path: 'admin/structure/admin-toolbar-test-entity'
-  defaults:
-    _form: '\Drupal\admin_toolbar\Form\TestEntitySettingsForm'
-    _title: 'Test Entity'
-  requirements:
-    _permission: 'administer admin_toolbar_test_entity'
