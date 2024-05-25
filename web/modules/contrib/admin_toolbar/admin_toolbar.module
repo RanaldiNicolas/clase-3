@@ -72,3 +72,33 @@ function toolbar_tools_menu_navigation_links(array $tree) {
   }
   return $tree;
 }
+
+use Drupal\Core\Render\Element;
+
+/**
+ * Implements hook_theme().
+ */
+function admin_toolbar_theme(): array {
+  return [
+    'admin_toolbar_test_entity' => ['render element' => 'elements'],
+  ];
+}
+
+/**
+ * Prepares variables for test entity templates.
+ *
+ * Default template: admin-toolbar-test-entity.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the test entity information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_admin_toolbar_test_entity(array &$variables): void {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+

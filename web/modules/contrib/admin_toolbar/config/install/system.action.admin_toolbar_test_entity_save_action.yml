@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - admin_toolbar
+id: admin_toolbar_test_entity_save_action
+label: 'Save test entities'
+type: admin_toolbar_test_entity
+plugin: entity:save_action:admin_toolbar_test_entity
+configuration: {  }

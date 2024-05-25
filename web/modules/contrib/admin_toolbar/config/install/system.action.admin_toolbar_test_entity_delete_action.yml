@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - admin_toolbar
+id: admin_toolbar_test_entity_delete_action
+label: 'Delete test entities'
+type: admin_toolbar_test_entity
+plugin: entity:delete_action:admin_toolbar_test_entity
+configuration: {  }
